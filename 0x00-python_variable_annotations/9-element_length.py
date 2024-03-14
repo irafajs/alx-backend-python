@@ -4,9 +4,11 @@ Shebang to create a PY code
 """
 
 
-from typing import Sequence, Tuple, List
+from typing import Sequence, Tuple, List, Iterable
 
 
-def element_length(lst: Sequence) -> List[Tuple[Sequence, int]]:
+ret_lst = Iterable[Sequence]
+
+def element_length(lst: ret_lst) -> List[Tuple[Sequence, int]]:
     """accept sequence args and return List, Tupe"""
     return [(item, len(item)) for item in lst]
