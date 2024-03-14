@@ -1,0 +1,5 @@
+This directory contains exercises about python
+____________________________________________________
+
+
+0x00-python_variable_annotations
