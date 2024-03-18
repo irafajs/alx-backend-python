@@ -12,11 +12,3 @@ async def wait_random(max_delay: int = 10) -> float:
     rand_num = random.uniform(0, max_delay)
     await asyncio.sleep(rand_num)
     return rand_num
-
-
-async def main():
-    """main to run the whole code"""
-    max_delay = 10
-    result = await wait_random(max_delay)
-
-asyncio.run(main())
